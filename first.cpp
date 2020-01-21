@@ -7,12 +7,12 @@ int add(int, int);
 
 int main()
 {
-    int num1, num2, sum;
+    int num1, num2, sum1;
     cout<<"Enters two numbers to add: ";
     cin >> num1 >> num2;
     // Function call
-    sum = add(num1, num2);
-    cout << "Sum = " << sum;
+    sum1 = add(num1, num2);
+    cout << "Sum = " << sum1;
     return 0;
 }
 
