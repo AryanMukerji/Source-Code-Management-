@@ -8,10 +8,10 @@ int factorial(int);
 
 int main() 
 {
-    int n;
+    int n1;
     cout<<"Enter a number to find factorial: ";
-    cin >> n;
-    cout << "Factorial of " << n <<" = " << factorial(n);
+    cin >> n1;
+    cout << "Factorial of " << n1 <<" = " << factorial(n1);
     return 0;
 }
 
