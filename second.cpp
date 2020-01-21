@@ -15,8 +15,8 @@ int main() {
     return 0;
 }
 
-void display(int var) {
-    cout << "Integer number: " << var << endl;
+void display(int var1) {
+    cout << "Integer number: " << var1 << endl;
 }
 
 void display(float var) {
