@@ -19,8 +19,8 @@ int main()
 // Function definition
 int add(int a, int b)
 {
-    int add;
+    int addAB;
     add = a + b;
     // Return statement
-    return add;
+    return addAB;
 }
