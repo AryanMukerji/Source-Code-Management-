@@ -22,12 +22,12 @@ Here you go !!!
 
 {
 
-If you want to link two local repositories to a single remote repository , follow the folling cammands :- 
+If you want to link two local repositories to a single remote repository , follow the folling commands :- 
 
-First add the remote repo to local repo 
+First add the remote repo to local repo,
 $ git remote add <name> <url>
 
-Then the folling command 
+Then the folling command,
 $ git pull scm master --allow-unrelated-histories
 From https://github.com/ryanMukerji/Source-Code-Management-
  * branch            master     -> FETCH_HEAD
@@ -35,7 +35,7 @@ CONFLICT (add/add): Merge conflict in .gitignore
 Auto-merging .gitignore
 Automatic merge failed; fix conflicts and then commit the result.
 
-Then this 
+Then this,
 $ git mergetool
 
 This message is displayed because 'merge.tool' is not configured.
@@ -51,7 +51,7 @@ Normal merge conflict for '.gitignore':
 Hit return to start merge resolution tool (vimdiff):
 3 files to edit
 
-After Exiting the VI editor type this 
+After Exiting the vi editor type this, 
 $ git status
 On branch master
 Untracked files:
@@ -60,17 +60,17 @@ Untracked files:
 
 nothing added to commit but untracked files present (use "git add" to track)
 
-Then this 
+Then this,
 $ git add .
 
-And then this 
+And then this, 
 $ git commit -m"Merging two local to one remote"
 [master f95a9b4] Merging two local to one remote
  1 file changed, 5 insertions(+)
  create mode 100644 .gitignore.orig
 
 And it's done !!! 
-Now you can push with the folloing cammand 
+Now you can push with the folloing command, 
 
 $ git push --set-upstream scm master
 Enumerating objects: 36, done.
@@ -83,5 +83,23 @@ remote: Resolving deltas: 100% (18/18), completed with 1 local object.
 To https://github.com/AryanMukerji/Source-Code-Management-.git
    2f4f727..f95a9b4  master -> master
 Branch 'master' set up to track remote branch 'master' from 'scm'.
+
+}
+
+{
+
+Learned a few more git commands :-
+
+$ git fetch origin
+# Fetches updates made to an online repository
+$ git merge origin YOUR_BRANCH_NAME
+# Merges updates made online with your local work
+
+$ git pull origin YOUR_BRANCH_NAME
+# Grabs online updates and merges them with your local work
+
+git pull origin master --allow-unrelated-histories
+
+$ git push --set-upstream <remote> <branch>
 
 }
