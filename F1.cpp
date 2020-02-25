@@ -12,12 +12,12 @@ int main ()
     // using new operator 
     p = new(nothrow) int; 
     if (!p) 
-        cout << "allocation of memory failed\n"; 
+        cout << " Allocation of memory failed \n"; 
     else
     { 
         // Store value at allocated address 
         *p = 29; 
-        cout << "Value of p: " << *p << endl; 
+        cout << " Value of p = " << *p << endl; 
     } 
   
     // Request block of memory 
@@ -31,13 +31,13 @@ int main ()
     int *q = new(nothrow) int[n]; 
   
     if (!q) 
-        cout << "allocation of memory failed\n"; 
+        cout << " Allocation of memory failed \n "; 
     else
     { 
         for (int i = 0; i < n; i++) 
             q[i] = i+1; 
   
-        cout << "Value store in block of memory: "; 
+        cout << " Value store in block of memory : "; 
         for (int i = 0; i < n; i++) 
             cout << q[i] << " "; 
     } 
