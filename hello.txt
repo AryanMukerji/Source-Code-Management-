@@ -1,0 +1,21 @@
+This is the first line of my file.
+This is the second line of my file.
+
+{
+
+This is how someone can add Notepad++ in Gitbash in 64 bit system :- 
+
+$ echo 'alias npp="C:/Program\ Files\/Notepad\+\+/notepad\+\+.exe"' >> ~/.bashrc
+
+Here are the steps :- 
+
+$ cd ~ 
+$ $ echo 'alias npp="C:/Program\ Files\/Notepad\+\+/notepad\+\+.exe"' >> ~/.bashrc
+
+Now close and reopen gitbash 
+
+$ npp [ Filename ]
+
+Here you go !!!
+
+}
