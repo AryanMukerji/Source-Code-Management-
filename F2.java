@@ -36,3 +36,4 @@ public class Sum {
         System.out.println(s.sum(10.5, 20.5)); 
     } 
 } 
+//This code was copied from GeeksforGeeks
