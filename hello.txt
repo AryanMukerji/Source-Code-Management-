@@ -24,6 +24,9 @@ Here you go !!!
 
 If you want to link two local repositories to a single remote repository , follow the folling commands :- 
 
+Before this if you have'nt done any thing from your second local repo, perform the folloing command,
+$ git clone <url>
+
 First add the remote repo to local repo,
 $ git remote add <name> <url>
 
