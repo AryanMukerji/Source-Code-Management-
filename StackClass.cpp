@@ -8,6 +8,3 @@ struct City
     
     City *Next ;
 };
-
-
-
