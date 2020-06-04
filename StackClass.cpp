@@ -8,3 +8,19 @@ struct City
     
     City *Next ;
 };
+
+class Stack
+{
+    City *Top;
+    
+    public:
+    
+    Stack() 
+    { 
+        Top = NULL; 
+    }
+    
+    void Push();
+    void Pop();
+    void Display();
+};
