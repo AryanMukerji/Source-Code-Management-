@@ -58,3 +58,25 @@ void Stack::Push()
 		Top = Temp;
 	}
 }
+
+void Stack::Pop()
+{
+    City *Temp;
+    
+    if(Top == NULL)
+    {
+        cout<<"\n Underflow !!! ";
+        return;
+    }
+    
+    cout<<"\n City Pin Code : "<<Top -> Pin;
+    cout<<"\n City Name : "<<Top -> Name;
+    
+    cout<<"\n City Details Deleted !!! \n";
+        
+    Temp = Top;
+        
+    Top = Top -> Next;
+        
+    delete Temp;
+}
