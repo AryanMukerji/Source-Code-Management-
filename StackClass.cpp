@@ -80,3 +80,26 @@ void Stack::Pop()
         
     delete Temp;
 }
+
+void Stack::Display()
+{
+    City *Temp;
+    
+    Temp = Top;
+    
+    if(Top == NULL)
+    {
+        cout<<"\n Stack Is Empty !!! \n";
+        return;
+    }
+    
+    cout<<endl;
+    
+    while(Temp != NULL)
+    {
+        cout<<" [ "<<Temp -> Pin<<" , "<<Temp -> Name<<" ] ->";
+        Temp = Temp -> Next;
+    }
+    
+    cout<<" !!! \n";
+}
