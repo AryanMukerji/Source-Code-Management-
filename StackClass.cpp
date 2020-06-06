@@ -103,3 +103,34 @@ void Stack::Display()
     
     cout<<" !!! \n";
 }
+
+int main()
+{
+    Stack s1;
+    int a;
+    
+    while(1)
+    {   
+        cout<<"\n Select An Option : \n 1. Push \n 2. Pop \n 3. Display \n 4. Exit \n Your Choice : ";
+        cin>>a;
+        
+        switch(a)
+        {
+            case 1: s1.Push();
+            break;
+        
+            case 2: s1.Pop();
+            break;
+        
+            case 3: s1.Display();
+            break;
+            
+            case 4: exit(0);
+            break;
+        
+            default : cout<<"\n Option Not Available !!";
+        }
+    } 
+    
+    return 0;
+}
