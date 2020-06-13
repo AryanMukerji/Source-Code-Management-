@@ -1,19 +1,19 @@
 #include<iostream> 
 using namespace std;
 
-static int DaysInMonth[]; //
+static int DaysInMonth[] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 }; 
 
 class Date
 {
     int Day, Month, Year, Days; 
 
-    DayCounter; //
+    unsigned short DayCounter;
     
     public:
     
     int LeapYear()
     { 
-        //
+        return ( (Year % 4 == 0 && Year % 100 != 0) || Year % 400 == 0 ); 
     }
     
     void OldDate(); 
@@ -36,11 +36,11 @@ void Date::OldDate()
     
     if (LeapYear())
     { 
-       //
+        DaysInMonth[1] = 29; 
     } 
     else 
     { 
-       //
+        DaysInMonth[1] = 28; 
     } 
     
     NewDate();
@@ -82,11 +82,19 @@ void Date::NewDate()
     }    
 }
 
-//
+void Date::DisplayDate()
+{
+    cout<<"\n The Updated Date Is :- ";
+    cout<<"\n Day : "<<Day<<"\n Month : "<<Month<<"\n Year : "<<Year;
+}
 
 int main()
-{    
-	//
-	//
+{ 
+    Date D1; 
+    
+    D1.OldDate(); 
+    
+    D1.DisplayDate();
+    
     return 0;
 }
